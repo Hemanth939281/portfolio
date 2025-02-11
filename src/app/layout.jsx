@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono, Grey_Qo, Lato, Mukta, Noto_Sans, Open_Sans, Roboto } from "next/font/google";
+import { Geist, Geist_Mono, Roboto } from "next/font/google";
 
 
 import "./globals.css";
@@ -14,11 +14,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const greyQo = Grey_Qo({ subsets: ["latin"], weight: ["400"] });
-export const lato = Lato({ subsets: ["latin"], weight: ["100", "300", "400", "700", "900"] });
-export const mukta = Mukta({ subsets: ["latin"], weight: ["200", "300", "400", "500", "600", "700", "800"] });
-export const notoSans = Noto_Sans({ subsets: ["latin"], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"] });
-export const openSans = Open_Sans({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700", "800"] });
+
 export const roboto = Roboto({ subsets: ["latin"], weight: ["100", "300", "400", "500", "700", "900"] });
 
 
