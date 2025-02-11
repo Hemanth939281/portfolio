@@ -31,7 +31,7 @@ export default function RootLayout({
       <body
         className={`${roboto.className}`}
       >
-        <div className="bg-gray-900 w-full h-screen">
+        <div className="bg-gray-900 w-full h-full lg:h-screen">
           <Header />
         {children}
         </div>
