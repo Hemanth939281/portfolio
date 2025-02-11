@@ -1,4 +1,4 @@
-import  Home from "./Home/page" 
+import HomeContent from "./Home/HomeContent";
 
 export default function Main() {
 
@@ -9,7 +9,7 @@ export default function Main() {
 
   return (
     <div>
-      <Home {...Intro}/>
+      <HomeContent {...Intro}/>
     </div>
   );
 }

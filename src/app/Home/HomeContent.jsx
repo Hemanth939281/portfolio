@@ -9,7 +9,7 @@ import {Grey_Qo, Lato, Mukta, Noto_Sans, Open_Sans} from "next/font/google"
     const mukta = Mukta({ subsets: ["latin"], weight: ["200", "300", "400", "500", "600", "700", "800"] });
     const notoSans = Noto_Sans({ subsets: ["latin"], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"] });
     const openSans = Open_Sans({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700", "800"] });
-const Home = ({name, description}) => {
+const HomeContent = ({name, description}) => {
     return (
         <div>
             <div className="text-white text-lg max-w-full lg:mx-28 mt-18 flex flex-col lg:flex-row gap-36 justify-center p-6">
@@ -26,4 +26,4 @@ const Home = ({name, description}) => {
 }
 
 
-export default Home;
+export default HomeContent;
