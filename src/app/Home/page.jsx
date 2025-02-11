@@ -1,7 +1,8 @@
-import Image from "next/image"
+import Image from "next/image";
+import PropTypes from "prop-types";
 import { greyQo, lato, roboto } from "../layout"
 
-const Home = ({name, description}) => {
+export const Home = ({name, description}) => {
     return (
         <div>
             <div className="text-white text-lg max-w-ful lg:mx-28 mt-18 flex flex-col lg:flex-row gap-36 justify-center p-6">
@@ -17,4 +18,13 @@ const Home = ({name, description}) => {
     )
 }
 
-export default Home
+Home.defaultProps = {
+    name: "Hemanth",
+    description: "Software Engineer with a passion for creating clean and maintainable code."
+}
+
+Home.propTypes = {
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+}
+
