@@ -1,16 +1,15 @@
 "use client"
 
 import Image from "next/image";
-import PropTypes from "prop-types";
 import {Grey_Qo, Lato, Mukta, Noto_Sans, Open_Sans} from "next/font/google"
 
-const Home = ({name, description}) => {
 
     const greyQo = Grey_Qo({ subsets: ["latin"], weight: ["400"] });
     const lato = Lato({ subsets: ["latin"], weight: ["100", "300", "400", "700", "900"] });
     const mukta = Mukta({ subsets: ["latin"], weight: ["200", "300", "400", "500", "600", "700", "800"] });
     const notoSans = Noto_Sans({ subsets: ["latin"], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"] });
     const openSans = Open_Sans({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700", "800"] });
+const Home = ({name, description}) => {
     return (
         <div>
             <div className="text-white text-lg max-w-full lg:mx-28 mt-18 flex flex-col lg:flex-row gap-36 justify-center p-6">
@@ -26,14 +25,5 @@ const Home = ({name, description}) => {
     )
 }
 
-Home.defaultProps = {
-    name: "Hemanth",
-    description: "Software Engineer with a passion for creating clean and maintainable code."
-}
-
-Home.propTypes = {
-    name: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-}
 
 export default Home;
