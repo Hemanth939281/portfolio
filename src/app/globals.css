@@ -8,4 +8,19 @@
       -webkit-box-reflect: below 12px 
         linear-gradient(to bottom, rgba(255,255,255,0) 50%, rgba(255,255,255,0.5));
     }
+
+    .appear {
+      animation: appear 5s linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 40%
+    }
+    
+    @keyframes appear {
+      0% { opacity: 0;
+        scale:0.4
+       }
+      100% { opacity: 1;
+        scale:1
+      }
+    }
   }

@@ -39,9 +39,9 @@ const Header = () => {
 
       
     return (
-       <div className="relative">
-        <div className={`${isMenuOpen ? "opacity-100 h-full" : "opacity-0 h-0"} lg:opacity-100 lg:flex lg:justify-center lg:items-center py-6 mb-10 transition-opacity duration-300 px-4`}>
-      <div className="relative lg:m-4 lg:m-auto w-full lg:w-auto text-center mt-2 flex flex-col lg:flex-row lg:gap-6 text-white text-lg lg:px-4 py-2 rounded-lg bg-red-500 blur-xs shadow-white shadow-md p-t-[16rem]">
+       <div className="flex justify-center items-center">
+        <div className={`${isMenuOpen ? "opacity-100 h-full" : "opacity-0 max-h-0"} w-full lg:opacity-100 lg:flex lg:justify-center lg:items-center py-6 transition-opacity duration-300 px-4 h-full`}>
+      <div className={`${isMobile ? 'relative' : 'fixed'} z-50 lg:m-4 lg:m-auto w-full lg:w-auto text-center mt-2 flex flex-col lg:flex-row lg:gap-6 text-white text-lg lg:px-4 py-2 rounded-lg bg-red-500 blur-xs shadow-white shadow-md p-t-[16rem]`}>
       {isMenuOpen && 
            <button onClick={handleToggleMenu} className="mt-2 absolute right-4 rounded lg:hidden mb-4" ><Image src="/close.png" width={20} height={20} alt="menu icon"/></button>
      }

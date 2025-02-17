@@ -1,3 +1,4 @@
+import About from "./about/page";
 import HomeContent from "./Home/HomeContent";
 
 export default function Main() {
@@ -10,6 +11,7 @@ export default function Main() {
   return (
     <div>
       <HomeContent {...Intro}/>
+      <About />
     </div>
   );
 }
