@@ -14,6 +14,7 @@ export const aboutData = {
     projects: [
       {
         name: "Campus Project Hub",
+        link: "https://hub-amber.vercel.app/",
         description: "A platform connecting students within their college to collaborate and develop innovative projects. Admins can manage students, projects, and vacancies within their respective colleges.",
         techStack: ["React.js", "Tailwind CSS", "Firebase", "Supabase"],
         features: [
@@ -26,6 +27,7 @@ export const aboutData = {
       },
       {
         name: "Netflix Clone",
+          link:"https://rakshakh-netflix.vercel.app/",
         description: "A full-stack streaming platform inspired by Netflix, featuring authentication, real-time data fetching, and a user-friendly interface.",
         techStack: ["Next.js", "Tailwind CSS", "Firebase", "TMDb API"],
         features: [
@@ -38,6 +40,7 @@ export const aboutData = {
       },
       {
         name: "Restaurant Management System",
+          link:"http://rakshakhrestro.infinityfreeapp.com/",
         description: "A complete solution for restaurant owners to manage orders, tables, and inventory efficiently.",
         techStack: ["PHP", "MYSQL", "Tailwind CSS"],
         features: [
