@@ -90,7 +90,7 @@ export const aboutData = {
     ],
 
     contact: {
-      email: "your.hkh777650@example.com",
+      email: "hkh777650@gmail.com",
       linkedin: "https://www.linkedin.com/in/hemanthkumarrajana",
       github: "https://github.com/Hemanth939281",
     }
