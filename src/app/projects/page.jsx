@@ -1,6 +1,7 @@
 import React from "react";
 import { Rocket, Video, Utensils } from "lucide-react"; 
 import { aboutData } from "../utils/aboutData";
+import { Link } from "next/link";
 
 
 
@@ -20,7 +21,7 @@ const Projects = () => {
                 <div className="flex items-center justify-start mb-6">
                   <project.icon className="w-10 h-10 text-indigo-600" />
                   <h3 className="ml-4 text-2xl font-semibold text-gray-800">
-                    {project.name}
+                    <Link href={project.link}>{project.name}</Link>
                   </h3>
                 </div>
                 <p className="text-gray-600 text-lg mb-4">{project.description}</p>
